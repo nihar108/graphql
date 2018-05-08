@@ -6,12 +6,15 @@ Followed these amazing net ninja [tutorials](https://www.youtube.com/playlist?li
 Reference code [here](https://github.com/iamshaunjp/graphql-playlist)
 
 ## Getting Started
+
 ```
   cd server
+  yarn
   npm start
 ```
 
 ```
   cd ../client
+  yarn
   npm start
 ```
