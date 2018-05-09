@@ -1,3 +1,4 @@
+// parses graphql query strings into graphql abstract syntax tree (AST)
 import { gql } from 'apollo-boost';
 
 const getBooksQuery = gql`

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+
 // bind query to the react component
 import { graphql } from 'react-apollo';
+
 import { getBooksQuery } from '../queries/queries';
 
 class BookList extends Component {
@@ -27,5 +29,7 @@ class BookList extends Component {
   }
 }
 
-// component has access to data that come back from the query, in the props
+// The graphql() function returns a function which will “enhance” any component 
+// with reactive GraphQL capabilities. This follows the React higher-order component pattern 
+// which is also used by react-redux’s connect function.
 export default graphql(getBooksQuery)(BookList);
